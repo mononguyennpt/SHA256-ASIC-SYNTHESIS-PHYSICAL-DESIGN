@@ -1,0 +1,14 @@
+*.log
+*.bak
+*.swp
+*.db
+*.gds
+*.spef
+*.sdf
+*.tar.gz
+*.tar.gz.sha256
+runs/
+exports/
+pdk/
+PDK/
+.DS_Store
