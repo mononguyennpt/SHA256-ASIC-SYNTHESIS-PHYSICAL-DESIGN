@@ -51,6 +51,39 @@
 | Maximum capacitance | 0 |
 | Maximum fanout | 84 |
 
+## Post-Route Power Estimation (Innovus)
+
+| Component | Estimated Power |
+|---|---:|
+| Internal power | 4.64353929 mW |
+| Switching power | 1.29895643 mW |
+| Leakage power | 0.00123119 mW |
+| **Total power** | **5.94372690 mW** |
+| Clock-network power (included in total) | ~0.479 mW |
+
+### Power Analysis Conditions
+
+- Technology: GPDK045 (45 nm)
+- Tool: Cadence Innovus 25.12
+- Supply voltage: 1.08 V
+- Clock period: 6.000 ns
+- Analysis view: VIEW_SETUP (slow library)
+- Method: Static vectorless power estimation
+- Sequential element activity: 0.2 transitions/cycle
+- Primary input activity: 0.2 transitions/cycle
+- SAIF/VCD activity files: Not provided
+
+The power report was generated from a restored copy of the
+selected post-route baseline.
+
+This is a model-based estimate, not measured workload power
+or independent power signoff.
+
+The clock-network power is included in total power and
+must not be added to the total again.
+
+See [Power Report](../reports/physical_design/power/power_summary.rpt).
+
 ## Limitations
 
 - Maximum fanout constraint of 32 is not fully satisfied.
